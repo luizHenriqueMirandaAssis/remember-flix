@@ -2,3 +2,8 @@
 
 ## Curso: Técnico em desenvolvimento de sistema (3º módulo)
 ### O projeto possui o objetivo de criar um sistema para lembrar de aonde paramos em nossas series favoritas  
+
+### Preparação do ambiente
+- Instalação do Node (https://nodejs.org/en/download/)
+- Dentro do projeto executar o comando: **npm install**
+- Executar o projeto comando: **npm start**
