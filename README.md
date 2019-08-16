@@ -13,3 +13,4 @@
 - React (https://tableless.com.br/react-o-que-e-e-como-funciona-essa-ferramenta/)
 - DOM (https://tableless.com.br/entendendo-o-dom-document-object-model/)
 - JavaScript (https://www.devmedia.com.br/introducao-ao-javascript/25548)
+- Rotas (https://bognarjunior.wordpress.com/tag/react-router-dom/) 
