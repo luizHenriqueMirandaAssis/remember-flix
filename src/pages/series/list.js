@@ -25,7 +25,7 @@ class List extends Component {
     }
 
    async componentDidMount() {
-        const response = await Gateway.request("http://10.68.102.181:4000/series")
+        const response = await Gateway.request("http://localhost:4000/series")
 
         this.setState({
             isLoading :false,
@@ -118,22 +118,43 @@ class List extends Component {
     }
 
     validate(value) {
+    //# (validate) Utilizar função retornando (true/false)
+    //# (validate) Realizar validação mínimo 3 caracteres
+    //# (filter)   tratamento não encontrado na listagem
+    //# (Pull Request) -- Pontuação maior
+    //# (Ou enviar arquivo (list.js) por e-mail) -- 
 
       const success = "validate valid"
       const error = "validate invalid"
       let msgError = ""
       let classValidate = "" 
-
+        
       if(value.trim() === '')
       {
         msgError = "Campo obrigatório"
         classValidate = error;
+      } else if(value.length < 3){
+        msgError = "Minimo de 3 caracteres"
+        classValidate = error;
+      } else {
+        classValidate = success;
+        msgError = ""
       }
-
-      this.setState({
-          classValidate,
-          msgError
-      })
+      
+      if (classValidate === error) {
+        this.setState({
+            classValidate,
+            msgError
+        })
+        return false;    
+      } else {
+        this.setState({
+            classValidate,
+            msgError
+        })
+        return true;
+      }
+      
     }
 
     render() {
@@ -142,4 +163,3 @@ class List extends Component {
 }
 
 export default List
-
