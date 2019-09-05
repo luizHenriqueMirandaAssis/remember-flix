@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Gateway from '../../lib/axios'
 import { Table, TextInput } from 'react-materialize';
+import {Link}  from 'react-router-dom'
 
 class List extends Component {
 
@@ -25,7 +26,7 @@ class List extends Component {
     }
 
    async componentDidMount() {
-        const response = await Gateway.request("http://10.68.102.181:4000/series")
+        const response = await Gateway.request("http://10.68.102.197:3000/series")
 
         this.setState({
             isLoading :false,
@@ -63,6 +64,7 @@ class List extends Component {
             
             <div>
                <TextInput className={this.state.classValidate} error={this.state.msgError} value={this.state.filter} placeholder="Pesquisar" onChange={(e)=> this.change(e)} />
+               <Link to={'/series/new'}> Nova </Link>
             </div>
 
             <Table>
