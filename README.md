@@ -14,3 +14,5 @@
 - DOM (https://tableless.com.br/entendendo-o-dom-document-object-model/)
 - JavaScript (https://www.devmedia.com.br/introducao-ao-javascript/25548)
 - Rotas (https://bognarjunior.wordpress.com/tag/react-router-dom/) 
+- React-Materialize (https://www.npmjs.com/package/react-materialize)
+- React-Materialize documentação (http://react-materialize.github.io/react-materialize/?path=/story/react-materialize--welcome)
