@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Gateway from '../../lib/axios'
 import { Table, TextInput } from 'react-materialize';
+import {Link} from 'react-router-dom'
 
 class List extends Component {
 
@@ -40,7 +41,8 @@ class List extends Component {
         if(isLoading) 
          return (<div><span>Carregando...</span></div>)
 
-        const rows = data.map((value) =>
+        const rows = 
+        data.map((value) =>
             <tr key={value.id} >
                 <td>
                     {value.id}
@@ -53,7 +55,7 @@ class List extends Component {
                 </td>
                 <td>
                 {value.temporadas}
-                </td>   
+                </td>
             </tr>
         )
 
@@ -63,6 +65,7 @@ class List extends Component {
             
             <div>
                <TextInput className={this.state.classValidate} error={this.state.msgError} value={this.state.filter} placeholder="Pesquisar" onChange={(e)=> this.change(e)} />
+               <Link to={'/series/new'} > Nova </Link>
             </div>
 
             <Table>
@@ -104,9 +107,7 @@ class List extends Component {
     filter(value) {
         const {source} = this.state
 
-        this.validate(value)
-
-        const found = (value.trim() === '')
+        const found = (this.validate(value) === false)
         ? source
         : source.filter(function(serie){
             return serie.descricao.toLowerCase().indexOf(value.toLowerCase()) !== -1
