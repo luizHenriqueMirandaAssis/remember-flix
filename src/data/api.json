@@ -1,0 +1,148 @@
+{
+  "series": [
+    {
+      "id": 1,
+      "descricao": "Friends",
+      "temporadas": 4,
+      "categoria": "drama"
+    },
+    {
+      "id": 2,
+      "descricao": "Game of thrones",
+      "temporadas": 8,
+      "categoria": "aventura"
+    },
+    {
+      "id": 3,
+      "descricao": "Naruto",
+      "temporadas": 8,
+      "categoria": "anime"
+    },
+    {
+      "id": 4,
+      "descricao": "Stranger things",
+      "temporadas": 3,
+      "categoria": "aventura"
+    },
+    {
+      "id": 5,
+      "descricao": "La Casa de Papel",
+      "temporadas": 4,
+      "categoria": "aventura"
+    },
+    {
+      "id": 6,
+      "descricao": "Cavaleiros do zodiaco",
+      "temporadas": 8,
+      "categoria": "anime"
+    },
+    {
+      "id": 7,
+      "descricao": "Breaking Bad",
+      "temporadas": 8,
+      "categoria": "aventura"
+    },
+    {
+      "id": 8,
+      "descricao": "Os Simpsons",
+      "temporadas": 8,
+      "categoria": "aventura"
+    },
+    {
+      "id": 9,
+      "descricao": "Grey’s Anatomy",
+      "temporadas": 8,
+      "categoria": "drama"
+    },
+    {
+      "id": 10,
+      "descricao": "The Big Bang Theory",
+      "temporadas": 8,
+      "categoria": "comedia"
+    },
+    {
+      "id": 11,
+      "descricao": "South Park",
+      "temporadas": 8,
+      "categoria": "aventura"
+    },
+    {
+      "id": 12,
+      "descricao": "Dr. House",
+      "temporadas": 8,
+      "categoria": "drama"
+    },
+    {
+      "descricao": "Dragon Ball Z",
+      "temporadas": 10,
+      "categoria": "anime",
+      "id": 13
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "descricao": "1as"
+    },
+    {
+      "id": 2,
+      "descricao": "Aventura"
+    },
+    {
+      "id": 3,
+      "descricao": "Comédia"
+    },
+    {
+      "id": 4,
+      "descricao": "Dança"
+    },
+    {
+      "id": 5,
+      "descricao": "Romance"
+    },
+    {
+      "id": 6,
+      "descricao": "Suspense"
+    },
+    {
+      "id": 7,
+      "descricao": "Pornô"
+    },
+    {
+      "id": 8,
+      "descricao": "test"
+    },
+    {
+      "id": 9,
+      "descricao": "teste"
+    },
+    {
+      "id": 10,
+      "descricao": "teste"
+    },
+    {
+      "id": 11,
+      "descricao": "teste"
+    },
+    {
+      "id": 12,
+      "descricao": "teste"
+    },
+    {
+      "id": 13,
+      "descricao": "teste"
+    },
+    {
+      "id": 14,
+      "descricao": "teste"
+    },
+    {
+      "id": 15,
+      "descricao": "teste"
+    },
+    {
+      "id": 16,
+      "descricao": "aaa"
+    }
+  ]
+}

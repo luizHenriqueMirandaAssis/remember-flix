@@ -4,12 +4,6 @@ import { Table, TextInput } from "react-materialize";
 import { Link } from "react-router-dom";
 
 class List extends Component {
-  //# (validate) Utilizar função retornando (true/false)
-  //# (validate) Realizar validação mínimo 3 caracteres
-  //# (filter)   tratamento não encontrado na listagem
-  //# (Pull Request) -- Pontuação maior
-  //# (Ou enviar arquivo por e-mail) -- Pontuação menor
-
   constructor() {
     super();
 
@@ -24,7 +18,7 @@ class List extends Component {
   }
 
   async componentDidMount() {
-    const response = await Gateway.request("http://localhost:3000/series");
+    const response = await Gateway.request("http://localhost:3000/categorias");
 
     this.setState({
       isLoading: false,
@@ -47,14 +41,12 @@ class List extends Component {
       <tr key={value.id}>
         <td>{value.id}</td>
         <td>{value.descricao}</td>
-        <td>{value.categoria}</td>
-        <td>{value.temporadas}</td>
       </tr>
     ));
 
     return (
       <div>
-        <h1>Lista de séries</h1>
+        <h1>Lista de categorias</h1>
 
         <div>
           <TextInput
@@ -64,16 +56,14 @@ class List extends Component {
             placeholder="Pesquisar"
             onChange={e => this.change(e)}
           />
-          <Link to={"/series/new"}> Nova </Link>
+          <Link to={"/categorias/new"}> Nova </Link>
         </div>
 
         <Table>
           <thead>
             <tr>
               <th data-field="id">Id</th>
-              <th data-field="name">Nome</th>
               <th data-field="price">Descrição</th>
-              <th data-field="price">Quantidade temporadas</th>
             </tr>
           </thead>
           <tbody>{rows}</tbody>
@@ -100,9 +90,10 @@ class List extends Component {
     const found =
       value.trim() === ""
         ? source
-        : source.filter(function(serie) {
+        : source.filter(function(categoria) {
             return (
-              serie.descricao.toLowerCase().indexOf(value.toLowerCase()) !== -1
+              categoria.descricao.toLowerCase().indexOf(value.toLowerCase()) !==
+              -1
             );
           });
 
